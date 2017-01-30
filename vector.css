@@ -1,0 +1,223 @@
+/*---------------------------------------------------------General Rules-----------------------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
+ @import url('https://fonts.googleapis.com/css?family=Merriweather');
+::-moz-selection { color: #000;  background: #F9FF78; }
+::selection      { color: #000;  background: #F9FF78; } 
+
+body, 
+h2, h3, h4, h5, h6, 
+.mw-editsection a{
+	font-family: Didact Gothic, Roboto, Droid Sans, Verdana, Sans-Serif !important;
+}
+h1 {
+	font-family: Merriweather, Roboto, Sans !important;
+}
+body, .mw-head {
+	background: white;
+}
+a, p, li, dd, td, th, tr, b, input, textarea, i, .mw-content-ltr .thumbcaption,
+div.vectorTabs li a, .vectorMenu span, div.vectorMenu h3 span,
+div#mw-head div.vectorMenu h3, 
+div.vectorMenu div.menu li a,
+div#mw-panel div.portal h3  {
+	font-size: 18px;
+	/*font-size: 1.125em;*/
+} 
+
+p, dd, span, td, th, tr, b {
+	color: black;
+}
+
+dd {
+	margin-bottom: 1em;
+}
+li {
+	/*padding: 0.5em 0;*/
+}
+
+/*TOC Contents box*/
+#toc  {
+	margin: 2em 0;
+	padding: 12px;
+}
+#togglelink {
+	font-size: 12px;
+}
+.mw-body #toc h2, .mw-body .toc h2 {
+	font-size: 150%;
+}
+
+/* Right Info Box*/
+.infobox {
+	padding: 2em 2em;
+	margin-left: 3em;
+	border: 1px solid #ccc;
+	width: 36em !important;
+}
+
+.infobox tr {
+	line-height: 2em;
+}
+/*HEADINGS*/
+h1, h2, h3, h4, h5, h6 {
+	border-bottom: none;
+}
+#firstHeading  { 
+	/*display: inline;*/
+	border-bottom: 1px solid black;
+	/*font-weight: 900;*/
+	font-size: 2em;
+	
+}
+#firstHeading i {
+	font-style: unset;
+	font-size: inherit;
+}
+
+.mw-headline {
+		font-size: 1.5em;
+		border-bottom: 1px solid #000;
+}
+h2 .mw-headline {
+	font-size: 1.4em;
+	border-bottom: 2px solid #000;
+	line-height: 2em;
+	/*font-weight: 900;*/
+}
+#mw-content-text h2 {
+	margin-bottom: 0.5em;
+}
+.mw-body h2 {
+	border-top: 1px solid #ccc;
+	margin-top: 1em;
+	padding-top: 0.5em;
+}
+.mw-body h3, .mw-body h4 {
+	font-weight: inherit;
+}
+/*BODY CONTENT*/
+#mw-content-text {
+	text-align: justify;	
+}
+.mw-body p, li, dd {
+	line-height: 1.8;
+}
+.reference a{
+	font-size: 14px;
+}
+div.hatnote {
+	padding-left: 0;
+}
+#contentSub {
+	margin-top: 0;
+	margin-left: 0;
+}
+/*LINKS*/
+a, .mw-body a.external, div#mw-panel div.portal div.body ul li a, div.vectorMenu li a,
+#toc .tocnumber, #toc .toctext{
+	/*color: #4B82BF;*/
+	/*color: #069bad;*/
+	color: #0672ad;
+}
+a:visited {
+	/*color: #A087DA;*/
+	/*color: #3f06ad;*/
+	color: #4506ad;
+}
+
+/*GENERAL STRUCTURE*/
+.mw-body {
+	/*border: 1px solid #ccc;*/
+	margin-left: 15em;
+	border: none;
+	border-top: 1px solid #ccc;
+}
+div#mw-panel {
+	width: 15em;
+	left: 1.3em;
+}
+#left-navigation {
+	margin-left: 15em;
+}
+/*Top bar*/
+div.vectorTabs ul li,
+div#mw-head div.vectorMenu h3 {
+	background-image: none;
+	background: white;
+}
+div.vectorTabs span,
+div.vectorTabs {
+	background-image: none;
+}
+#mw-head-base, #mw-head, #mw-page-base, #p-logo  {
+	background: white;
+}
+
+div.vectorTabs .selected {
+	background: #ccc;
+}
+div.vectorTabs li.selected a {
+	text-decoration: underline;
+}
+div.vectorMenu h3 span {
+	padding-top: 1.1em;
+}
+div.vectorMenu h3 a {
+	height: 2.8em;
+}
+div.vectorMenu div.menu {
+	/*top: 3em;*/
+}
+#right-navigation, #left-navigation {
+	margin-top: 3em;
+}
+#p-personal {
+	top: 0.8em;
+}
+#mw-page-base {
+	height: 7em;
+}
+div#simpleSearch {
+	height: 2em;
+	margin-top: 1em;
+	background-image: none;
+	border: 1px solid #ccc;
+}
+div#simpleSearch #searchInput {
+	font-size: 18px;
+	padding: 0.2em 0 0.2em 0.8em;
+}
+.suggestions-result {
+	line-height: 2.5em;
+}
+.suggestions-result-current {
+	background: #0672ad;
+}
+
+/*LEFT SIDE*/
+div#mw-panel div.portal div.body ul li {
+	line-height: 1.5em;
+}
+#p-lang .uls-settings-trigger {
+	margin-right: 5em;
+}
+
+.wb-langlinks-link {
+	line-height: 3em;
+	padding-right: 10em !important;
+}
+
+.read-more-container {
+	margin: 0 0 0 15em;
+}
+/*BOXES*/
+.thumbcaption {
+	font-size: 18px;
+}
+div.thumbinner {
+	padding: 1.5em;
+	border: 1px solid #ccc;
+}
+div.thumb .thumbimage {
+	margin-bottom: 0.5em;
+}
