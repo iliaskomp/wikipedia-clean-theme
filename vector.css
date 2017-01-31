@@ -1,8 +1,9 @@
 /*---------------------------------------------------------General Rules-----------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
- @import url('https://fonts.googleapis.com/css?family=Merriweather');
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 ::-moz-selection { color: #000;  background: #F9FF78; }
 ::selection      { color: #000;  background: #F9FF78; } 
+:focus { outline: 0; }
 
 body, 
 h2, h3, h4, h5, h6, 
@@ -39,6 +40,7 @@ li {
 #toc  {
 	margin: 2em 0;
 	padding: 12px;
+	border: 1px solid #ccc;
 }
 #togglelink {
 	font-size: 12px;
@@ -210,6 +212,13 @@ div#mw-panel div.portal div.body ul li {
 .read-more-container {
 	margin: 0 0 0 15em;
 }
+div#mw-panel div.portal div.body {
+	margin: 0.5em 0 0.5em 0.35em;
+}
+.mw-wiki-logo {
+	background-image: url(https://github.com/iliaskomp/wikipedia-clean-theme/blob/master/wikipedia-logo.png?raw=true);
+	background-size: 8em;
+}
 /*BOXES*/
 .thumbcaption {
 	font-size: 18px;
@@ -220,4 +229,47 @@ div.thumbinner {
 }
 div.thumb .thumbimage {
 	margin-bottom: 0.5em;
+}
+/*HIDE LEFT SIDEBAR BY DEFAULT*/
+div#mw-panel {
+        display:none;
+}
+.mw-body {
+        margin-left: 0; /*15em*/
+        width: 80%;
+        margin: 0 auto;
+}
+div#mw-head {
+        width: 90%; /*100%*/
+        margin: 0 auto;
+        right: auto; /*0*/
+}
+#left-navigation {
+        margin-left: 11em; /*15em*/
+}
+#toggleSidebarButton {
+	position: absolute;
+	left: 9px;
+	top: 10px;
+	border-radius: 100px;
+	border: none;
+	background: #0672ad;
+	color: white;
+	padding-bottom: 2px;
+}
+#toggleSidebarButton, #toggleSidebarButton:active, #toggleSidebarButton:focus {
+  outline:none;
+}
+#toggleSidebarButton::-moz-focus-inner  {
+	border: 0;
+}
+/*TOP PANEL HIDE BY DEFAULT*/
+#mw-head {
+	display: none;
+}
+#mw-head-base {
+	height: 1em;
+}
+.mw-body {
+	border-top: none;
 }
